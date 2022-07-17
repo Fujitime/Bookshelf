@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #e9e3e7;
+  background-color: #2963af;
+  font-family: "Roboto", sans-serif;
+}
+
+.h2 {
+  margin-bottom: 5px;
+}
+.h2 span {
+  border-bottom: 2px solid #049233;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.button-clear {
+  display: block;
+  text-align: center;
+  background-color: #ff4a13cb;
+  color: #539b71;
+  margin: 10px auto 0px auto;
+  padding: 10px 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button-save {
+  display: block;
+  text-align: center;
+  background-color: #29a59d;
+  color: #ffffff;
+  margin: 10px auto 0px auto;
+  padding: 10px 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-delete {
+  display: inline;
+  background-color: #d2f7cb;
+  color: #009783;
+  margin: 10px auto 0px auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-finish,
+.button-unfinish {
+  display: inline;
+  background-color: #035a19;
+  color: #00d8cd;
+  margin: 10px 5px 0px auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  color: #2c8d44;
+  border: 1px solid #946958;
+  border-radius: 0.25rem;
+}
+
+.form-container {
+  margin: 0.8rem auto;
+  padding: 20px;
+  display: none;
+  background-color: #3dc45f;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
+}
+
+section {
+  margin: 70px auto;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.jumbotron {
+  text-align: center;
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbotron .left {
+  margin: auto;
+  padding: 20px;
+  flex-direction: column;
+  flex-basis: 45%;
+  flex-grow: 1;
+}
+
+.jumbotron .right {
+  margin: 20px auto;
+  flex-direction: column;
+  flex-basis: 55%;
+  flex-grow: 1;
+}
+
+.jumbotron img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.search {
+  text-align: center;
+  margin: 10vh 32px;
+  padding: 0;
+  display: block;
+}
+
+.search input {
+  padding: 10px;
+  font-size: larger;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+}
+
+.books {
+  margin: 10vh 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 16px;
+}
+
+.books .book {
+  display: table-cell;
+  padding: 10px;
+}
+
+.small {
+  font-size: small;
+  opacity: 70%;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.button-primary {
+  margin: 40px auto;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #029e94;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button-add {
+  display: block;
+  text-align: center;
+  background-color: #035a54;
+  color: #57ffab;
+  margin: 10px auto 0px auto;
+  padding: 10px 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.action {
+  display: flex;
+  margin: auto 22px;
+}
+
+.action > * {
+  margin: auto 10px;
+}
+
+.list-group {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.list-group-item {
+  margin: 10px auto;
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1e2220;
+  text-decoration: none;
+  background-color: #c5e7f1;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.17);
+  gap: 0.5rem !important;
+  align-items: baseline;
+}
+
+.book-detail {
+  margin: 5px auto;
+}
+
+.book-action {
+  margin: 5px auto;
+}
+
+footer {
+  text-align: center;
+  color: #ffffffe1;
+  background-color: #026e10;
+  padding: 7vh 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f5eee4c2;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  color: #035a54;
+}
+
+@media (max-width: 610px), (max-width: 769px) {
+  .jumbotron .left {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .jumbotron .right {
+    margin: 20px auto;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .jumbotron {
+    text-align: center;
+    margin: 18vh 32px;
+    display: block;
+  }
+
+  .books {
+    display: block;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>Bookshelf apps </title>
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <section class="right mobile"></section>
+        <section class="left">
+          <h1 class="title"> Bookshelf Apps </h1>
+          <div class="subtitle">
+            <p> Kelola buku anda dengan rak ajaib </p>
+          </div>
+          <p>
+            <a href="#manage" class="button-primary">Kelola sekarang</a>
+          </p>
+          <main id="manage">
+            <section class="search">
+              <form id="searchBook">
+                <input id="searchBookTitle" type="text" placeholder="Cari judul buku ">
+              </form>
+            </section>
+        </section>
+        <section class="right desktop">
+          <a href="https://github.com/FujiTime">
+            <img src="assets/img/bukselp.png" alt="IMG">
+          </a>
+        </section>
+      </div>
+    </header>
+    <section class="books">
+      <div class="book">
+        <h2 class="h2 text-center">
+          <span>Daftar Buku</span>
+        </h2>
+        <a class="button-add">Tambahkan buku baru</a>
+        <div class="form-container">
+          <form id="book">
+            <div class="form-group">
+              <label for="title">Judul</label>
+              <input class="form-control" id="title" type="text" placeholder="Masukan judul buku">
+            </div>
+            <div class="form-group">
+              <label for="author">Pengarang</label>
+              <input class="form-control" id="author" type="text" placeholder="Masukan nama pengarang">
+            </div>
+            <div class="form-group">
+              <label for="year">Tahun</label>
+              <input class="form-control" id="year" type="number" placeholder="Masukan tahun buku di rilis">
+            </div>
+            <div class="form-group">
+              <input id="isComplete" type="checkbox">
+              <label for="isComplete">Sudah dibaca</label>
+            </div>
+            <div class="form-group">
+              <button class="button-save" id="saveBook" type="button">Simpan</button>
+            </div>
+          </form>
+        </div>
+        <div id="unfinished-read" class="list-group"></div>
+      </div>
+      <div class="book">
+        <h2 class="h2 text-center">
+          <span>Selesai Dibaca</span>
+        </h2>
+        <a class="button-clear">Hapus Semua</a>
+        <div id="finished-read" class="list-group"></div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2022 <a href="https://github.com/FujiTime" target="_blank">Fuji Halim Rabani </p>
+    </footer>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
